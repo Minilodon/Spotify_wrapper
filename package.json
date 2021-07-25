@@ -1,0 +1,41 @@
+{
+  "name": "spotify_wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper duma API do Spotify",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha test/**/*.spec.js --require @babel/register",
+    "test-tdd": "mocha test/**/*.spec.js --require @babel/register --watch",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minilodon/Spotify_wrapper.git"
+  },
+  "keywords": [
+    "spotify",
+    "tdd",
+    "javascript",
+    "api"
+  ],
+  "author": "Pedro Soares <pedro.soareszl99@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Minilodon/Spotify_wrapper/issues"
+  },
+  "homepage": "https://github.com/Minilodon/Spotify_wrapper#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/register": "^7.14.5",
+    "chai": "^4.3.4",
+    "eslint": "^7.31.0",
+    "husky": "^7.0.1",
+    "mocha": "^9.0.2",
+    "nyc": "^15.1.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
